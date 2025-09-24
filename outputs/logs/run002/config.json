@@ -1,0 +1,30 @@
+{
+  "run": {
+    "seeds": [
+      0,
+      1
+    ],
+    "num_inference_steps": 20,
+    "guidance_scale": 7.0,
+    "scheduler": "dpmpp_2m",
+    "batch_size": 8,
+    "images_per_class": 32,
+    "image_size": 512,
+    "model_id": "runwayml/stable-diffusion-v1-5",
+    "device": "auto",
+    "precision": "auto"
+  },
+  "prompts": {
+    "negative_prompt": "low quality, blurry, deformed, bad anatomy, text, watermark, logo, cropped",
+    "prompts": {
+      "cheeseburger": "a high quality photo of a cheeseburger on a plate",
+      "tiramisu": "a high quality photo of tiramisu dessert on a table"
+    }
+  },
+  "versions": {
+    "diffusers": "0.35.1",
+    "torch": "2.8.0",
+    "transformers": "4.56.2"
+  },
+  "device": "mps"
+}

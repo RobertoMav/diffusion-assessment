@@ -1,0 +1,10 @@
+seeds: [0]
+num_inference_steps: 30
+guidance_scale: 7.0
+scheduler: dpmpp_2m
+batch_size: 4
+images_per_class: 16
+image_size: 512
+model_id: stabilityai/sd-turbo
+device: auto
+precision: auto

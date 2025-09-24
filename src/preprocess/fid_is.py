@@ -12,8 +12,9 @@ def get_inception_preprocess(image_size: int = 299) -> transforms.Compose:
     - Convert to tensor in [0,1]
     - Normalize with Inception-style mean/std (same as ImageNet)
     """
-    normalize_mean = [0.5, 0.5, 0.5]
-    normalize_std = [0.5, 0.5, 0.5]
+    # Use ImageNet normalization expected by torchvision InceptionV3
+    normalize_mean = [0.485, 0.456, 0.406]
+    normalize_std = [0.229, 0.224, 0.225]
 
     return transforms.Compose(
         [

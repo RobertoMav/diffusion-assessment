@@ -1,0 +1,4 @@
+negative_prompt: "low quality, blurry, deformed, bad anatomy, text, watermark, logo, cropped"
+prompts:
+  poutine: "a high quality photo of poutine with gravy and cheese curds"
+  tiramisu: "a high quality photo of tiramisu dessert on a table"
